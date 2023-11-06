@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Selection2Student {
+public class Selection2Student01 {
     public static void main(String[] args) {
         Scanner input01 = new Scanner(System.in);
 
