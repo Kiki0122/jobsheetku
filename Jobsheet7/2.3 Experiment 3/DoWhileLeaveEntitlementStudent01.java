@@ -11,7 +11,7 @@ public class DoWhileLeaveEntitlementStudent01 {
         leaveEntitlement = input01.nextInt();
 
         do {
-            System.out.print("Do you want to take leave (y/n) = ");
+            System.out.print("Do you want to take leave (y/t) = ");
             confirmation = input01.next();
 
             if (confirmation.equalsIgnoreCase("y")) {
@@ -23,12 +23,14 @@ public class DoWhileLeaveEntitlementStudent01 {
                     System.out.println("The remaining leave entitlement = " + leaveEntitlement);
                 } else {
                     System.out.println("The remaining leave entitlement is not sufficient!");
-                    System.out.print("Do you still want to take leave (y/n)? ");
+                    System.out.print("Do you still want to take leave (y/t)? ");
                     confirmation = input01.next();
-                    if (confirmation.equalsIgnoreCase("n")) {
+                    if (confirmation.equalsIgnoreCase("t")) {
                         break;
                     }
                 }
+            } else if (confirmation.equalsIgnoreCase("t")) {
+                break;
             }
         } while (leaveEntitlement > 0);
     }
