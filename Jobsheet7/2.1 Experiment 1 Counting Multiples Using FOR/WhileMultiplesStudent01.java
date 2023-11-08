@@ -15,7 +15,7 @@ public class WhileMultiplesStudent01 {
                 sum += i;
                 counter++;
             }
-            i++; // Jangan lupa untuk menginkremen i agar loop berlanjut
+            i++; 
         }
 
         double average = (double) sum / counter; // Hitung rata-rata
